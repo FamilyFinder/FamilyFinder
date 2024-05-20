@@ -16,16 +16,15 @@ Usage: Family_finder.sh -i <input> -o <output> -d <database> [options]
 -H <file.hmm>      HMM file to filter prediction results (recommended when using -D).
 -t                 Specify to generate a phylogenetic tree after predictions with IQtree. 
 -q <iqtree_params> Specify iqtree parameters (default: -bb 1000 -alrt 1000 -abayes -mem 20G -safe -T AUTO; http://www.iqtree.org/doc/).
-  echo "  -s                 Specify to retrieve species names."
-  echo "                     Note: This may significantly increase processing time."
-  echo "  -I <domain>        Specify domains using InterPro classification,"
-  echo "                     separated by commas (e.g., IPR001,IPR002,IPR004)."
-  echo "  -e <environment>   Specify a Conda environment for third-party components."
-  echo "  -h                 Display this help message and exit."
-  echo ""
-  echo "Example:"
-  echo "  Family_finder.sh -i /path/to/genomes -d path/to/orthoDB -o /path/to/output"
+-s                 Specify to retrieve species names. **Note**: This may significantly increase processing time.
+-I <domain>        Specify domains using InterPro classification, separated by commas (e.g., IPR001,IPR002,IPR004).
+-e <environment>   Specify a Conda environment for third-party components.
+-h                 Display this help message and exit.
 
+Examples: 
+BASIC: Family_finder.sh -i /path/to/genomes -d path/to/orthoDB -o /path/to/output
+WITH PHYLOGENETIC RECONSTRUCTION: Family_finder.sh -i /path/to/genomes -d path/to/orthoDB -o /path/to/output -t
+WITH FILTER BY PROTEIN DOMAIN: Family_finder.sh -i /path/to/genomes -d path/to/orthoDB -o /path/to/output -I IPR001,IPR002,IPR004
 
 
 In order to use the pipeline you need to have these dependencies installed:
@@ -40,18 +39,3 @@ In order to use the pipeline you need to have these dependencies installed:
 -Python v 3.x
 -Interproscan (if the option -I is setted)
 
-
-<!--
-**FamilyFinder/FamilyFinder** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
