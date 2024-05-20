@@ -35,8 +35,8 @@ The figure below shows the workflow of the pipeline.
 <br /> WITH PHYLOGENETIC RECONSTRUCTION: ``Family_finder.sh -i /path/to/genomes -d path/to/orthoDB -o /path/to/output -t``
 <br /> WITH FILTER BY PROTEIN DOMAIN: ``Family_finder.sh -i /path/to/genomes -d path/to/orthoDB -o /path/to/output -I IPR001,IPR002,IPR004``
 
-**Note:** There is a special script to filter the protein by domain and size when you download the protein from othoDB. The script name is formatting_database.sh. Due to the large header in orthoDB, it is recommended to use this script if you download the protein from this database.
-<br /> The usage of the script is ``formatting_database.sh -i <input> -o <output> [options]``
+**Note:** There is a special script to filter the protein by domain and size when you download the protein from othoDB. The script name is Formatting_database.sh. Due to the large header in orthoDB, it is recommended to use this script if you download the protein from this database.
+<br /> The usage of the script is ``Formatting_database.sh -i <input> -o <output> [options]``
 <br /> **Mandatory arguments**:
 - -i ``<input>``; Input file in FASTA format. The first line must start with '>'.
 - -o ``<output>``; Output file.
