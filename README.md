@@ -14,21 +14,21 @@ The figure below shows the workflow of the pipeline.
 <br /> Usage: Family_finder.sh ``-i <input> -o <output> -d <database> [options]``
 
 **The mandatory Arguments are**:
-- i ``<input>``; Path to the directory containing the genomes.
-- d ``<database>``; Database for protein predictions (e.g., orthoDB). This database will be used with miniprot (https://github.com/lh3/miniprot).
+- -i ``<input>``; Path to the directory containing the genomes.
+- -d ``<database>``; Database for protein predictions (e.g., orthoDB). This database will be used with miniprot (https://github.com/lh3/miniprot).
   
 **The optional Arguments are**:
-- o ``<output>``; Output directory (default: ./Family_finder_out).
-- D ``<database>``; Secondary database for predictions, not used with miniprot. Used alongside -d database by metaeuk.
-- m ``<min_length>``; Minimum protein length to consider after predictions.
-- M ``<max_length>``; Maximum protein length to consider after predictions.
-- H ``<file.hmm>``; HMM file to filter prediction results (recommended when using -D).
-- t  Specify to generate a phylogenetic tree after predictions with IQtree. 
-- q ``<iqtree_params>``; Specify iqtree parameters (default: -bb 1000 -alrt 1000 -abayes -mem 20G -safe -T AUTO; http://www.iqtree.org/doc/).
-- s  Specify to retrieve species names. **Note**: This may significantly increase processing time.
-- I ``<domain>``; Specify domains using InterPro classification, separated by commas (e.g., IPR001,IPR002,IPR004).
-- e ``<environment>``; Specify a Conda environment for third-party components.
-- h  Display this help message and exit.
+- -o ``<output>``; Output directory (default: ./Family_finder_out).
+- -D ``<database>``; Secondary database for predictions, not used with miniprot. Used alongside -d database by metaeuk.
+- -m ``<min_length>``; Minimum protein length to consider after predictions.
+- -M ``<max_length>``; Maximum protein length to consider after predictions.
+- -H ``<file.hmm>``; HMM file to filter prediction results (recommended when using -D).
+- -t  Specify to generate a phylogenetic tree after predictions with IQtree. 
+- -q ``<iqtree_params>``; Specify iqtree parameters (default: -bb 1000 -alrt 1000 -abayes -mem 20G -safe -T AUTO; http://www.iqtree.org/doc/).
+- -s  Specify to retrieve species names. **Note**: This may significantly increase processing time.
+- -I ``<domain>``; Specify domains using InterPro classification, separated by commas (e.g., IPR001,IPR002,IPR004).
+- -e ``<environment>``; Specify a Conda environment for third-party components.
+- -h  Display this help message and exit.
 
 **Examples**: 
 <br /> BASIC: ``Family_finder.sh -i /path/to/genomes -d path/to/orthoDB -o /path/to/output``
