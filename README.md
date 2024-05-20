@@ -4,6 +4,7 @@ If you use this pipeline please cite:
 Familyfinder takes an assembled genome as input to accurately predict a set or protein of interest. This pipeline uses several other well-known tools, such as miniport and metaeuk, to extract only the nucleotide sequences of interest from a given genome. In addition, when the pipeline was tested on insect genomes, it took about one minute to extract the protein and nucleotide sequences from the genome. 
 
 Usage: Family_finder.sh -i <input> -o <output> -d <database> [options]
+
 The mandatory Arguments are:
 -i <input>         Path to the directory containing the genomes.
 -d <database>      Database for protein predictions (e.g., orthoDB). This database
