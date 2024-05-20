@@ -3,14 +3,14 @@ If you use this pipeline please cite: XXXXXXX
 
 Familyfinder takes an assembled genome as input to accurately predict a set or protein of interest. This pipeline uses several other well-known tools, such as miniport and metaeuk, to extract only the nucleotide sequences of interest from a given genome. In addition, when the pipeline was tested on insect genomes, it took about one minute to extract the protein and nucleotide sequences from the genome. 
 
-Usage: Family_finder.sh -i <input> -o <output> -d <database> [options]
+Usage: Family_finder.sh ``-i <input> -o <output> -d <database> [options]``
 
 **The mandatory Arguments are**:
-- i: input; Path to the directory containing the genomes.
-- d: database; Database for protein predictions (e.g., orthoDB). This database will be used with miniprot (https://github.com/lh3/miniprot).
+- i: ``<input>``; Path to the directory containing the genomes.
+- d: ``<database>``; Database for protein predictions (e.g., orthoDB). This database will be used with miniprot (https://github.com/lh3/miniprot).
   
 **The optional Arguments are**:
--o <output>        Output directory (default: ./Family_finder_out).
+- o ``<output>``        Output directory (default: ./Family_finder_out).
 -D <database>      Secondary database for predictions, not used with miniprot. Used alongside -d database by metaeuk.
 -m <min_length>    Minimum protein length to consider after predictions.
 -M <max_length>    Maximum protein length to consider after predictions.
