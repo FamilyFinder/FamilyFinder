@@ -14,8 +14,8 @@ The figure below shows the workflow of the pipeline.
 <br /> Usage: Family_finder.sh ``-i <input> -o <output> -d <database> [options]``
 
 **The mandatory Arguments are**:
-- i: ``<input>``; Path to the directory containing the genomes.
-- d: ``<database>``; Database for protein predictions (e.g., orthoDB). This database will be used with miniprot (https://github.com/lh3/miniprot).
+- i ``<input>``; Path to the directory containing the genomes.
+- d ``<database>``; Database for protein predictions (e.g., orthoDB). This database will be used with miniprot (https://github.com/lh3/miniprot).
   
 **The optional Arguments are**:
 - o ``<output>``; Output directory (default: ./Family_finder_out).
