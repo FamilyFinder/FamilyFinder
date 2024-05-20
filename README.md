@@ -5,7 +5,7 @@ Familyfinder takes an assembled genome as input to accurately predict a set or p
 
 Usage: Family_finder.sh -i <input> -o <output> -d <database> [options]
 
-The mandatory Arguments are:
+The mandatory Arguments are:\n
 -i <input>         Path to the directory containing the genomes.
 -d <database>      Database for protein predictions (e.g., orthoDB). This database
   echo "                     will be used with miniprot (https://github.com/lh3/miniprot)."
