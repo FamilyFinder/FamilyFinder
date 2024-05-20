@@ -35,6 +35,21 @@ The figure below shows the workflow of the pipeline.
 <br /> WITH PHYLOGENETIC RECONSTRUCTION: ``Family_finder.sh -i /path/to/genomes -d path/to/orthoDB -o /path/to/output -t``
 <br /> WITH FILTER BY PROTEIN DOMAIN: ``Family_finder.sh -i /path/to/genomes -d path/to/orthoDB -o /path/to/output -I IPR001,IPR002,IPR004``
 
+**Note:** There is a special script to filter the protein by domain and size when you download the protein from othoDB. The script name is formatting_database.sh. Due to the large header in orthoDB, it is recommended to use this script if you download the protein from this database.
+<br /> The usage of the script is ``formatting_database.sh -i <input> -o <output> [options]``
+<br /> **Mandatory arguments**:
+- -i ``<input>``; Input file in FASTA format. The first line must start with '>'.
+- -o ``<output>``; Output file.
+  
+**Optional Arguments:**
+- -m ``<min_length>``; Minimum protein length to consider in the database.
+- -M ``<max_length>``; Maximum protein length to consider in the database.
+- -I ``<domain>``; Filter by domain. Specify domains using InterPro classification, separated by commas (e.g., IPR001,IPR002,IPR004).
+- -h ; Display this help message and exit.
+
+**Examples**:
+<br /> ``Formatting_databases.sh -i input.fasta -o output.fasta``
+<br /> ``Formatting_databases.sh -i input.fasta -o output.fasta -m 200 -M 1000 -I IPR001,IPR002,IPR004``
 
 You need to have these dependencies installed in order to use the pipeline (The versions refers to the version that were used for the test of the pipeline.):
 - BUSCO=5.7.1
