@@ -1,7 +1,7 @@
 # FamilyFinder: a new pipeline for the rapid retrieval of a protein or a protein family in an unannotated genomes
 If you use this pipeline please cite: XXXXXXX
 
-Familyfinder takes an assembled genome as input to accurately predict a set or protein of interest. This pipeline uses several other well-known tools, such as miniport and metaeuk, to extract only the nucleotide sequences of interest from a given genome. In addition, when the pipeline was tested on insect genomes, it took about one minute to extract the protein and nucleotide sequences from the selected genome. 
+Familyfinder takes an assembled genome as input to accurately predict a set or protein of interest. This pipeline uses several other well-known tools, such as miniprot and metaeuk, to extract only the nucleotide sequences of interest from a given genome. In addition, when the pipeline was tested on insect genomes, it took about one minute to extract the protein and nucleotide sequences from the selected genome. 
 
 The figure below shows the workflow of the pipeline.
 <br />  <img src=https://github.com/FamilyFinder/FamilyFinder/assets/170311637/71728427-d9ea-42da-9f9b-1f85c7a5c37b width="600" height="700">
