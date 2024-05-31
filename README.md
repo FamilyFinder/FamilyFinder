@@ -64,3 +64,5 @@ You need to have these dependencies installed in order to use the pipeline (The 
 - Python v 3.x
 - Interproscan v.  5.65-97.0 (if the option -I is selected)
 
+To test the pipeline please download the test_data folder from https://drive.google.com/drive/u/1/folders/1f7NsnSioCTsnZ0Uh978qSA-_C506eQka
+
